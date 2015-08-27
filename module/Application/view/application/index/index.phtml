@@ -1,0 +1,9 @@
+<h1>Acesso ao Sistema</h1>
+<p><?=$this->mensagens?></p>
+<form action="<?=$this->url('application',array(
+	'action' => 'login'
+))?>" method="post">
+Usuário: <input type="text" name="nome"><br>
+Senha: <input type="password" name="senha"><br>
+<input type="submit" value="entrar"> 
+</form>

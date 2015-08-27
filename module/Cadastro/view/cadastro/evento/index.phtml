@@ -1,0 +1,18 @@
+<h1>Eventos</h1>
+<a href="<?=$this->url('cadastro', array(
+	'controller' => 'Evento',
+    'action' => 'edit'
+))?>">Adicionar evento</a>
+<table>
+<thead>
+<tr>
+<th>Código</th>
+<th>Nome</th>
+<th>&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<?php echo $this->partialLoop('eventos.phtml',$this->models)?>
+</tbody>
+</table>
+<a href="<?=$this->url('cadastro')?>">Voltar</a>

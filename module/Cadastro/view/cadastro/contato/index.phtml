@@ -1,0 +1,17 @@
+<h1>Contatos</h1>
+<a href="<?=$this->easyUrl('cadastro','Contato','edit')?>">
+Adicionar contato</a>
+<table>
+<thead>
+<tr>
+<th>Código</th>
+<th>Nome</th>
+<th>Telefone</th>
+<th>&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<?php echo $this->partialLoop('contatos.phtml',$this->models)?>
+</tbody>
+</table>
+<a href="<?=$this->url('cadastro')?>">Voltar</a>

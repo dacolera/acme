@@ -1,0 +1,14 @@
+<tr>
+<td><a href="<?=$this->url('cadastro', array(
+	'controller' => 'Contato',
+    'action' => 'edit',
+    'key' => $this->codigo
+))?>"><?=$this->codigo?></a></td>
+<td><?=$this->nome?></td>
+<td><?=$this->telefone?></td>
+<td><a href="<?=$this->url('cadastro', array(
+	'controller' => 'Contato',
+    'action' => 'delete',
+    'key' => $this->codigo
+))?>">Excluir</a></td>
+</tr>
